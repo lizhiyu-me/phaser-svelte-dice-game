@@ -17,10 +17,12 @@ export class Game extends Scene {
 
     create() {
 
-        const _doDice = this.createDice(this.scale.width / 2, this.scale.height / 2, this, 5000);
+        const _doDice = this.createDice(this.scale.width / 2, this.scale.height / 2, this, 1000);
 
         this.doDice = ()=>{
-            _doDice(this.dice)
+            _doDice((randomNum)=>{
+                this.dice(randomNum)
+            })
         }
 
         // Text object to show the dice value

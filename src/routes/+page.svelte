@@ -6,8 +6,7 @@
     //  References to the PhaserGame component (game and scene are exposed)
     let phaserRef: TPhaserRef = { game: null, scene: null};
 
-    const addSprite = () => {
-
+    const startRoll = () => {
         const scene = phaserRef.scene;
 
         if (scene)
@@ -24,7 +23,7 @@
     <PhaserGame bind:phaserRef={phaserRef} />
     <div>
         <div>
-            <button class="button" on:click={addSprite}>Roll</button>
+            <button class="button" on:click={startRoll}>Roll</button>
         </div>
     </div>
 </div>
