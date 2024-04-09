@@ -24,7 +24,7 @@
     <PhaserGame bind:phaserRef={phaserRef} />
     <div>
         <div>
-            <button class="button" on:click={addSprite}>Add New Sprite</button>
+            <button class="button" on:click={addSprite}>Roll</button>
         </div>
     </div>
 </div>
